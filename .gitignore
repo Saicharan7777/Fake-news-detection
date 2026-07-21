@@ -1,0 +1,41 @@
+# ── Node dependencies ──
+node_modules/
+dist/
+dist-ssr/
+
+# ── Python ──
+__pycache__/
+*.pyc
+
+# ── Large datasets (download separately) ──
+backend/python/Fake.csv
+backend/python/True.csv
+dataset/
+
+# ── Generated ML models & artifacts ──
+backend/python/*.pkl
+!backend/python/fake_news_model.pkl
+models/
+static/
+
+# ── Logs ──
+logs/
+*.log
+
+# ── Empty / unused directories ──
+templates/
+utils/
+
+# ── Environment & secrets ──
+.env
+backend/.env
+
+# ── Editor / OS files ──
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
