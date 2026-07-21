@@ -4,7 +4,7 @@ import NewsForm from './components/NewsForm';
 import Result from './components/Result';
 import './App.css';
 
-const API_BASE_URL = 'https://fake-news-backend-jxwo.onrender.com';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://fake-news-backend-jxwo.onrender.com';
 
 function App() {
   const [result, setResult] = useState(null);
