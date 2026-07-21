@@ -11,11 +11,12 @@ connectDB().catch((err) => {
 
 const app = express();
 
-// Allow requests from both local dev and deployed frontend
+// Allow requests from local dev and all deployed frontends
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://fake-news-detection-k6dk.onrender.com'
+    'https://fake-news-detection-k6dk.onrender.com',
+    'https://fake-news-detection-plum.vercel.app'
   ],
   methods: ['GET', 'POST'],
   credentials: true
